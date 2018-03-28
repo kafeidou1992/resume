@@ -1,0 +1,177 @@
+body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/1.jpg) center center no-repeat;
+    background-size: cover; 
+    filter: blur(100px);
+    z-index: -1;
+}
+
+section {
+    width: 800px;
+    margin: 50px auto;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section .cover {
+    height: 350px;
+    background:linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0.01),rgba(0,0,0,0.01),rgba(0,0,0,0.2)), url(../img/1.jpg) center center no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+section .cover .location {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    text-align: center;
+}
+
+section .cover .location .icon-location {
+    font-size: 35px;
+}
+
+section .cover .tab {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+section .cover .tab .tab-header>li {
+    float: left;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    color: #aaa;
+    border-bottom: 2px solid transparent;
+}
+
+section .cover .tab .tab-header>li .iconfont {
+    margin-right: 8px;
+}
+
+section .cover .tab .tab-header>li.active {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+section .cover .tab .tab-content>li {
+    display: none;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.3);
+    width: 800px;
+    height: 100px;
+}
+
+section .cover .tab .tab-content>li.active {
+    display: block;
+}
+
+section .weather-data {
+    background-color: rgba(255,255,255,0.3);
+}
+
+section .weather-data .now {
+    float: left;
+    height: 150px;
+    width: 288px;
+    text-align: center;
+}
+
+section .weather-data .now::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+section .weather-data .now .wrap {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+section .weather-data .now .detail {
+    float: left;
+}
+
+section .weather-data .now .temperature {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 5px;
+}
+
+section .weather-data .now .date {
+    font-size: 12px;
+    width: 96px;
+    line-height: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+section .weather-data .now img{
+    height: 80px;
+    width: 80px;
+    vertical-align: top;
+}
+
+section .weather-data .now .more{
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+section .weather-data .now .detail:first-child{
+    margin-right: 16px;
+}
+
+section .weather-data .future {
+    margin-left: 288px;
+}
+
+section .weather-data .future li {
+    float: left;
+    height: 150px;
+    width: 85.33px;
+    border-left: 1px solid rgb(0,0,0,0.1);
+    text-align: center;
+    display: table;
+}
+
+section .weather-data .future li .wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section .weather-data .future img {
+    height: 40px;
+    width: 40px;
+    vertical-align: top;
+}
+
+section .weather-data .future .weather-pic {
+    margin: 6px 0;
+}
+
+section .weather-data .future .day {
+    font-size: 12px;
+    background-color: rgba(0,0,0,0.2);
+    width: 38px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
